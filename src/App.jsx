@@ -11,6 +11,8 @@ import Condicional from './components/basicos/Condicional';
 import CondicionalComIf from './components/basicos/CondicionalComIf';
 import Pai from './components/comunicacao/direta/Pai';
 import Animation  from './components/animacao/Animation';
+import Super from './components/comunicacao/indireta/Super';
+import Input from './components/form/Input';
 
   
 
@@ -27,8 +29,16 @@ export default (props) => {
            <Animation data="contact-email.json"/>
         </Card>
 
+        <Card titulo="#09 - Input" color="#8B0000" contentColor="#E0FFFF">
+            <Input></Input>
+        </Card>
+
+        <Card titulo="#08 - Comunicação Indireta " color="#FFD700" contentColor="#E0FFFF" >
+            <Super/>  
+        </Card>
+
         <Card titulo="#07 - Comunicação Direta " color="#FF4500" contentColor="#E0FFFF" >
-            <Pai></Pai>  
+            <Pai sobrenome="Costa"></Pai>  
         </Card>
 
         <Card titulo="#06 - Condicional com If " color="#FA6900" contentColor="#E0FFFF">
